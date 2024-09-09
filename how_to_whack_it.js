@@ -48,17 +48,7 @@ $(`#mole${pos}`).click(function () {
  })
    }
 
-   if (time<0) {
-    console.log('lnkjn');
-    
-    alert ('Game over !'+'\n'+'Your score is: '+Score)
-    Score=0
-    time=0
-    $(`.grid-item`).empty()
-    clearInterval(over)
-    clearInterval(stop)
-}
- 
+
 
 
 
