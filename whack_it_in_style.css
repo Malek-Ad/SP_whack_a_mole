@@ -1,0 +1,54 @@
+body{
+  background-image: url('./Images/backbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: rgb(167, 64, 4);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#game_interface {
+  margin-block: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 148px 148px 148px; /* Equal columns */
+  grid-template-rows: 116px 116px 116px;    /* Equal rows */
+background-image: url('./Images/background.png');
+}
+
+
+.grid-item img {
+  width: 148px;
+  height: 116; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; /* White text color */
+  background-color: #8B4513; /* SaddleBrown */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #6f4f28; /* Darker brown */
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #4b3621; /* Even darker brown */
+  transform: scale(0.95);
+}
